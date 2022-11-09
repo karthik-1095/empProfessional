@@ -1,0 +1,28 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SharedResource Module
+Bundle-SymbolicName: SharedResource
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: TIBCO Software Inc.
+TIBCO-BW-ConfigProfile: META-INF/default.substvar
+TIBCO-BW-SharedModule: META-INF/module.bwm
+TIBCO-BW-Edition: bwe
+TIBCO-BW-JobSharedVariables: META-INF/module.jsv
+Require-Capability: com.tibco.bw.model; filter:="(name=bwext)",
+ com.tibco.bw.palette; filter:="(name=bw.generalactivities)",
+ com.tibco.bw.palette; filter:="(name=bw.jdbc)",
+ com.tibco.bw.sharedresource.model; filter:="(name=bw.httpclient)",
+ com.tibco.bw.sharedresource.model; filter:="(name=bw.httpconnector)",
+ com.tibco.bw.sharedresource.model; filter:="(name=bw.jdbc)",
+ com.tibco.bw.sharedresource.model; filter:="(name=bw.cred)",
+ com.tibco.bw.sharedresource.model; filter:="(name=bw.sslclient)",
+ com.tibco.bw.sharedresource.model; filter:="(name=bw.sslserver)"
+TIBCO-BW-ModuleSharedVariables: META-INF/module.msv
+Provide-Capability: com.tibco.bw.module; name="SharedResource"; version:Version="1.0.0",
+ com.tibco.bw.schemas; ns="http://www.eniquesolutions.com/schemas/CommonLogger/Schema/CommonLog.xsd",
+ com.tibco.bw.schemas; ns="http://www.eniquesolutions.com/emp_details",
+ com.tibco.bw.wsdls; ns="http://www.eniquesolutions.com/empProfessional/AbstarctWSDL",
+ com.tibco.bw.wsdls; ns="http://www.eniquesolutions.com/empTitleSalary/AbstractWSDL",
+ com.tibco.bw.processes; name="commonsharedresource",
+ com.tibco.bw.resources; name="commonsharedresource"
+TIBCO-BW-Version: 6.8.0 V55 2021-11-10

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_kKsTAF8mEe2bSq9HtwQRHg" targetNamespace="http://tns.tibco.com/bw/composite/SharedResource" name="SharedResource" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_KM1NYl8nEe2bSq9HtwQRHg" name="EmpTitleSalary" promote="ComponentProcess1/EmpTitleSalary">
+    <sca:interface.wsdl xmi:id="_KM1NZl8nEe2bSq9HtwQRHg" interface="http://www.eniquesolutions.com/empTitleSalary/AbstractWSDL#wsdl.interface(EmpTitleSalary)" scaext:wsdlLocation="../Service%20Descriptors/empTitleSalary.wsdl"/>
+  </sca:service>
+  <sca:property xmi:id="_kVSZcF8mEe2bSq9HtwQRHg" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_kVlUYF8mEe2bSq9HtwQRHg" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_kVlUYV8mEe2bSq9HtwQRHg" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_kVvFYF8mEe2bSq9HtwQRHg" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_kVvFYV8mEe2bSq9HtwQRHg" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_kVvFYl8mEe2bSq9HtwQRHg" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_kV4PUF8mEe2bSq9HtwQRHg" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_kV4PUV8mEe2bSq9HtwQRHg" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_kV4PUl8mEe2bSq9HtwQRHg" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_4O3L8F8mEe2bSq9HtwQRHg" name="ComponentProcess1" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_4O3L8V8mEe2bSq9HtwQRHg" processName="commonsharedresource.Process"/>
+    <sca:service xmi:id="_KM1NYF8nEe2bSq9HtwQRHg" name="EmpTitleSalary">
+      <sca:interface.wsdl xmi:id="_KM1NYV8nEe2bSq9HtwQRHg" interface="http://www.eniquesolutions.com/empTitleSalary/AbstractWSDL#wsdl.interface(EmpTitleSalary)" scaext:wsdlLocation="../Service%20Descriptors/empTitleSalary.wsdl"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>
